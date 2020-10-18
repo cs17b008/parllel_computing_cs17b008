@@ -64,7 +64,7 @@ int main(int argc, char **argv)
   MPI_Init(&argc, &argv);
   MPI_Comm_rank(MPI_COMM_WORLD, &rank);
   MPI_Comm_size(MPI_COMM_WORLD, &np);
-  MPI_Bcast(&terminal1, 1,MPI_INT,0,MPI_COMM_WORLD);
+  MPI_Bcast(&terminal1, 1,MPI_INT,0,MPI_COMM_WORLD);//tried to check how broadcast works
   
   printf("In rank: %d\n", rank); 
   
